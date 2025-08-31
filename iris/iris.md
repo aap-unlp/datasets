@@ -16,7 +16,7 @@ Lo que hace este dataset tan valioso es su **simplicidad y claridad**: con solo 
 
 ### 🔑 Variable Objetivo
 
-**Species (Especie)**: Clasificación taxonómica de la flor Iris.
+**Class (Especie)**: Clasificación taxonómica de la flor Iris.
 - `Iris-setosa`
 - `Iris-versicolor` 
 - `Iris-virginica`
@@ -41,17 +41,13 @@ Lo que hace este dataset tan valioso es su **simplicidad y claridad**: con solo 
 
 El dataset fue obtenido del repositorio oficial de la Universidad de California, Irvine, donde ha sido mantenido como recurso educativo fundamental.
 
-**URL Oficial**:  
-👉 [https://archive.ics.uci.edu/ml/datasets/Iris](https://archive.ics.uci.edu/ml/datasets/Iris)
-
-**Nombre del archivo**: `iris.data`
+> **URL Oficial**: 👉 `https://archive.ics.uci.edu/ml/datasets/Iris`
+> 
+> **Nombre del archivo**: `iris.data`
 
 ### 📜 Contexto Histórico
 
 Este dataset se basa en las mediciones originales realizadas por el botánico **Edgar Anderson** y popularizadas por **Ronald Fisher** en su trabajo pionero sobre análisis discriminante. Las mediciones fueron recolectadas en la región del Gran Lago de Canadá, específicamente de la península de Gaspé.
-
-**Artículo original**:  
-> Fisher, R. A. (1936). *The use of multiple measurements in taxonomic problems*. Annals of Eugenics, 7(2), 179-188.
 
 ## 🔁 Proceso de Curaduría
 
@@ -87,6 +83,9 @@ Si bien el dataset no presenta problemas éticos significativos al tratarse de m
 ## 🔗 Acceso y Uso
 
 El dataset está disponible bajo **dominio público** y es ampliamente accesible a través de múltiples librerías de Python.
+
+### 📥 Cómo cargarlo en Python:
+
 Acceso con Scikit-Learn:
 ```python
 from sklearn.datasets import load_iris
@@ -121,3 +120,26 @@ print(iris.metadata)
   
 # información del dataset
 print(iris.variables) 
+```
+
+Acceso vía repositorio GitHub:
+```python
+import pandas as pd
+
+# url del repositorio github para descargar
+url = "https://raw.githubusercontent.com/aap-unlp/datasets/main/iris/iris.csv"
+iris = pd.read_csv(url)
+
+# Separar características y etiquetas
+X = iris.drop(columns=['class'])
+y = iris['class']
+
+# Información del dataset
+print("Columnas:", iris.columns.tolist())
+print("Primeras filas:\n", iris.head())
+```
+
+🔖 Cita Recomendada:
+
+> Fisher, R. A. (1936). *The use of multiple measurements in taxonomic problems*. Annals of Eugenics, 7(2), 179-188.
+

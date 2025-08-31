@@ -160,6 +160,9 @@ El dataset está pensado para **fines educativos, de investigación y salud púb
 
 El dataset está disponible bajo **licencia abierta** para investigación y enseñanza. Se recomienda citar adecuadamente tanto al repositorio UCI como al artículo original.
 
+### 📥 Cómo cargarlo en Python:
+
+Acceso con UCI:
 ```python
 from ucimlrepo import fetch_ucirepo 
   
@@ -177,7 +180,23 @@ print(obesity_ds.metadata)
 print(obesity_ds.variables) 
 ```
 
+Acceso vía repositorio GitHub:
+```python
+import pandas as pd
+
+# url del repositorio github para descargar
+url = "https://raw.githubusercontent.com/aap-unlp/datasets/main/obesity_uci/obesity_uci.csv"
+obesity_ds = pd.read_csv(url)
+
+# Separar características y etiquetas
+X = obesity_ds.drop(columns=['NObesity'])
+y = obesity_ds['NObesity']
+
+# Información del dataset
+print("Columnas:", obesity_ds.columns.tolist())
+print("Primeras filas:\n", obesity_ds.head())
+```
+
 ## 🔖 Cita Recomendada:
 > Mendoza Palechor, F., & De la Hoz Manotas, A. (2019). *Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru and Mexico*. Data in Brief, 27, 104344.  
-> Recuperado de: [https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition](https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition)  
-> Última actualización: Agosto 2019 – Mantenido por UCI Machine Learning Repository.
+> Recuperado de: https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition

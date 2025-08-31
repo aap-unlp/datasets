@@ -60,8 +60,9 @@ La versión utilizada en este análisis proviene del repositorio de **DataScienc
 El dataset utilizado en este análisis fue obtenido del repositorio público de **DataScience Dojo** en GitHub, una organización educativa reconocida en la comunidad de ciencia de datos por proporcionar recursos de aprendizaje de alta calidad.
 
 **URL Oficial**:  
-`https://github.com/datasciencedojo/datasets`
-`https://code.datasciencedojo.com/datasciencedojo/datasets`
+> https://github.com/datasciencedojo/datasets
+> 
+> https://code.datasciencedojo.com/datasciencedojo/datasets
 
 **Archivo Específico**:  
 `titanic.csv` en la rama principal del repositorio
@@ -103,8 +104,55 @@ Si bien el dataset representa una tragedia humana real, su uso con propósitos e
 
 El dataset está disponible bajo licencia abierta para propósitos educativos y de investigación. Su uso comercial puede requerir verificación de permisos específicos.
 
-**Cita Recomendada**:  
-*Dataset Titanic. Curated by DataScience Dojo. Retrieved from https://github.com/datasciencedojo/datasets*
+### 📥 Cómo cargarlo en Python:
+```python
+import seaborn as sns
+import pandas as pd
+
+# Cargar dataset Titanic desde Seaborn
+titanic = sns.load_dataset('titanic')
+
+# Separar características y etiquetas
+X = titanic.drop(columns=['survived'])
+y = titanic['survived']
+
+print("Dimensiones:", titanic.shape)
+print(titanic.head())
+```
+Acceso directo desde DataScience Dojo (GitHub):
+```python
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+titanic = pd.read_csv(url)
+
+# Separar características y etiquetas
+X = titanic.drop(columns=['Survived'])
+y = titanic['Survived']
+
+print("Dimensiones:", titanic.shape)
+print(titanic.head())
+
+```
+
+Acceso directo desde GitHub:
+```python
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/aap-unlp/datasets/main/titanic/titanic.csv"
+titanic = pd.read_csv(url)
+
+# Separar características y etiquetas
+X = titanic.drop(columns=['Survived'])
+y = titanic['Survived']
+
+print("Dimensiones:", titanic.shape)
+print(titanic.head())
+
+```
+
+## 🔖 Cita Recomendada:
+>Dataset Titanic. Curated by DataScience Dojo. Retrieved from https://github.com/datasciencedojo/datasets
 
 ---
 
