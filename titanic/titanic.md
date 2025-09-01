@@ -105,6 +105,8 @@ Si bien el dataset representa una tragedia humana real, su uso con propósitos e
 El dataset está disponible bajo licencia abierta para propósitos educativos y de investigación. Su uso comercial puede requerir verificación de permisos específicos.
 
 ### 📥 Cómo cargarlo en Python:
+
+Acceso directo desde Seaborn:
 ```python
 import seaborn as sns
 import pandas as pd
