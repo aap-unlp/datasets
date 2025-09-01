@@ -83,7 +83,7 @@ El dataset está disponible bajo licencia CC0: Dominio Público, lo que permite 
 
 ### 📥 Cómo cargarlo en Python:   
 
-Acceso directo desde GitHub:
+Acceso vía GitHub:
 ```python
 import pandas as pd
 

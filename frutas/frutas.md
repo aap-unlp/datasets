@@ -59,7 +59,7 @@ El dataset está disponible para uso educativo sin restricciones.
 
 ### 📥 Cómo cargarlo en Python:
 
-Acceso directo desde GitHub:
+Acceso vía GitHub:
 ```python
 import pandas as pd
 
