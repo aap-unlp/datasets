@@ -106,7 +106,7 @@ El dataset está disponible bajo licencia abierta para propósitos educativos y 
 
 ### 📥 Cómo cargarlo en Python:
 
-Acceso directo desde Seaborn:
+Acceso vía Seaborn:
 ```python
 import seaborn as sns
 import pandas as pd
@@ -121,7 +121,7 @@ y = titanic['survived']
 print("Dimensiones:", titanic.shape)
 print(titanic.head())
 ```
-Acceso directo desde DataScience Dojo (GitHub):
+Acceso vía DataScience Dojo (GitHub):
 ```python
 import pandas as pd
 
@@ -137,7 +137,7 @@ print(titanic.head())
 
 ```
 
-Acceso directo desde GitHub:
+Acceso vía GitHub:
 ```python
 import pandas as pd
 
