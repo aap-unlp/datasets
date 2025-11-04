@@ -1,6 +1,6 @@
 # 🌸 Dataset Iris: Clasificación de Especies de Flores Iris
 
-## 📖 Descripción General
+## 1. 📖 Descripción General
 
 El **Iris Dataset** es uno de los conjuntos de datos más icónicos y ampliamente utilizados en el ámbito del aprendizaje automático y la estadística. Este dataset fue introducido por el biólogo y estadístico **Ronald Fisher** en 1936 en su artículo fundacional "The use of multiple measurements in taxonomic problems", y se ha convertido en el ejemplo por excelencia para problemas de clasificación supervisada.
 
@@ -12,16 +12,16 @@ La versión estándar proviene del **repositorio de Machine Learning de la Unive
 
 Lo que hace este dataset tan valioso es su **simplicidad y claridad**: con solo 4 características numéricas y 3 clases balanceadas, se convierte en el punto de partida ideal para introducir conceptos de clasificación, visualización de datos y técnicas de preprocesamiento.
 
-## 📊 Atributos y Significados
+## 2. 📊 Atributos y Significados
 
-### 🔑 Variable Objetivo
+### 2.1 🔑 Variable Objetivo
 
 **Class (Especie)**: Clasificación taxonómica de la flor Iris.
 - `Iris-setosa`
 - `Iris-versicolor` 
 - `Iris-virginica`
 
-### 📏 Atributos de Medición (todos en centímetros)
+### 2.2 📏 Atributos de Medición (todos en centímetros)
 
 **SepalLength (Longitud del sépalo)**: Longitud del sépalo de la flor.  
 *Valores numéricos continuos.*
@@ -35,9 +35,9 @@ Lo que hace este dataset tan valioso es su **simplicidad y claridad**: con solo 
 **PetalWidth (Ancho del pétalo)**: Ancho del pétalo de la flor.  
 *Valores numéricos continuos.*
 
-## 🏢 Origen y Procedencia
+## 3. 🏢 Origen y Procedencia
 
-### 📚 Fuente Primaria: UCI Machine Learning Repository
+### 3.1 📚 Fuente Primaria: UCI Machine Learning Repository
 
 El dataset fue obtenido del repositorio oficial de la Universidad de California, Irvine, donde ha sido mantenido como recurso educativo fundamental.
 
@@ -45,11 +45,11 @@ El dataset fue obtenido del repositorio oficial de la Universidad de California,
 > 
 > **Nombre del archivo**: `iris.data`
 
-### 📜 Contexto Histórico
+### 3.2 📜 Contexto Histórico
 
 Este dataset se basa en las mediciones originales realizadas por el botánico **Edgar Anderson** y popularizadas por **Ronald Fisher** en su trabajo pionero sobre análisis discriminante. Las mediciones fueron recolectadas en la región del Gran Lago de Canadá, específicamente de la península de Gaspé.
 
-## 🔁 Proceso de Curaduría
+## 4. 🔁 Proceso de Curaduría
 
 El dataset ha sido meticulosamente curado y verificado:
 
@@ -59,7 +59,7 @@ El dataset ha sido meticulosamente curado y verificado:
 - Equilibrio perfecto entre clases
 - Documentación clara y estandarizada
 
-## 🎯 Valor Analítico
+## 5. 🎯 Valor Analítico
 
 Este dataset ofrece un entorno analítico perfecto para:
 
@@ -72,7 +72,7 @@ Este dataset ofrece un entorno analítico perfecto para:
 
 Su tamaño manejable (150 instancias, 4 atributos) y separabilidad lineal lo convierten en el recurso ideal para proyectos educativos y benchmarking de algoritmos.
 
-## 📝 Consideraciones Éticas
+## 6. 📝 Consideraciones Éticas
 
 Si bien el dataset no presenta problemas éticos significativos al tratarse de mediciones botánicas, es importante:
 
@@ -80,11 +80,11 @@ Si bien el dataset no presenta problemas éticos significativos al tratarse de m
 - Utilizar el dataset con fines educativos y de investigación
 - Citar apropiadamente las fuentes originales
 
-## 🔗 Acceso y Uso
+## 7. 🔗 Acceso y Uso
 
 El dataset está disponible bajo **dominio público** y es ampliamente accesible a través de múltiples librerías de Python.
 
-### 📥 Cómo cargarlo en Python:
+### 7.1 📥 Cómo cargarlo en Python:
 
 Acceso con Scikit-Learn:
 ```python
@@ -139,7 +139,7 @@ print("Columnas:", iris.columns.tolist())
 print("Primeras filas:\n", iris.head())
 ```
 
-🔖 Cita Recomendada:
+## 8. 🔖 Cita Recomendada:
 
 > Fisher, R. A. (1936). *The use of multiple measurements in taxonomic problems*. Annals of Eugenics, 7(2), 179-188.
 

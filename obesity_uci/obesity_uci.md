@@ -1,6 +1,6 @@
 # 🏃 Dataset de Obesidad: Niveles de Peso según Hábitos Alimenticios y Condición Física
 
-## 📖 Descripción General
+## 1. 📖 Descripción General
 
 El **Obesity Levels Dataset** es uno de los conjuntos de datos más relevantes en el ámbito de la salud pública, la nutrición y el aprendizaje automático aplicado a la medicina. Este dataset fue creado para estimar los niveles de obesidad en individuos de América Latina —específicamente de **México, Perú y Colombia**— basándose en sus hábitos alimenticios, nivel de actividad física y contexto socioconductual.
 
@@ -10,9 +10,9 @@ Lo que lo hace especialmente interesante es su **combinación de datos reales y 
 
 Este dataset representa un caso de estudio invaluable para comprender cómo los hábitos diarios influyen en el estado nutricional, y sirve como base para el desarrollo de intervenciones preventivas en salud.
 
-## 📊 Atributos y Significados
+## 2. 📊 Atributos y Significados
 
-## 🔑 Variable Objetivo
+### 2.1  🔑 Variable Objetivo
 
 **NObesity (Nivel de Obesidad)**: Clasificación del estado nutricional del individuo en función del índice de masa corporal (IMC) y otros factores clínicos.
 
@@ -24,7 +24,7 @@ Este dataset representa un caso de estudio invaluable para comprender cómo los 
 - `Obesity_Type_II`: Obesidad tipo II
 - `Obesity_Type_III`: Obesidad tipo III (mórbida)
 
-## 👤 Atributos Demográficos
+### 2.2 👤 Atributos Demográficos
 
 **Gender (Género)**: Género del individuo  
 - `Male`: Masculino  
@@ -39,7 +39,7 @@ Este dataset representa un caso de estudio invaluable para comprender cómo los 
 **Weight (Peso)**: Peso del individuo en kilogramos (kg).  
 *Combinado con la altura, es fundamental para derivar el estado nutricional.*
 
-## 💠 Atributos de Hábitos y Salud
+### 2.3 💠 Atributos de Hábitos y Salud
 
 **family_history_with_overweight (Antecedentes familiares de sobrepeso)**: Indica si un familiar directo tiene sobrepeso u obesidad.  
 - `yes`: Sí  
@@ -67,7 +67,7 @@ Este dataset representa un caso de estudio invaluable para comprender cómo los 
 - `yes`: Sí  
 - `no`: No  
 
-## 💧 Atributos de Estilo de Vida
+### 2.4 💧 Atributos de Estilo de Vida
 
 **CH2O (Consumo de agua diario)**: Cantidad aproximada de agua consumida al día.  
 - `1`: Bajo  
@@ -99,9 +99,9 @@ Este dataset representa un caso de estudio invaluable para comprender cómo los 
 - `Public_Transportation`  
 - `Walking`  
 
-## 🏢 Origen y Procedencia
+## 3. 🏢 Origen y Procedencia
 
-### 📚 Fuente Primaria: UCI Machine Learning Repository 
+### 3.1 📚 Fuente Primaria: UCI Machine Learning Repository 
 
 El dataset fue obtenido del repositorio oficial de la Universidad de California, Irvine, una de las fuentes más respetadas en ciencia de datos y aprendizaje automático.
 
@@ -110,7 +110,7 @@ El dataset fue obtenido del repositorio oficial de la Universidad de California,
 
 **Nombre del archivo**: `ObesityDataSet_raw_and_data_sinthetic.csv`
 
-### 🏛️ Fuentes Históricas y Metodológicas
+### 3.2 🏛️ Fuentes Históricas y Metodológicas
 
 Este dataset se basa en una investigación académica publicada en **Data in Brief**, una revista científica revisada por pares. Los datos fueron recolectados de forma mixta:
 
@@ -121,7 +121,7 @@ Este dataset se basa en una investigación académica publicada en **Data in Bri
 > Mendoza Palechor, F., & De la Hoz Manotas, A. (2019). *Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru and Mexico*. Data in Brief, 27, 104344.  
 > DOI: [https://doi.org/10.1016/j.dib.2019.104344](https://doi.org/10.1016/j.dib.2019.104344)
 
-## 🔁 Proceso de Curaduría
+## 4. 🔁 Proceso de Curaduría
 
 El equipo de UCI y los autores originales realizaron un proceso riguroso de curaduría que incluye:
 
@@ -132,7 +132,7 @@ El equipo de UCI y los autores originales realizaron un proceso riguroso de cura
 - Documentación detallada de cada variable
 - Publicación abierta para investigación y educación
 
-## 🎯 Valor Analítico
+## 5. 🎯 Valor Analítico
 
 Este dataset ofrece un entorno analítico altamente instructivo, ideal para:
 
@@ -145,7 +145,7 @@ Este dataset ofrece un entorno analítico altamente instructivo, ideal para:
 
 Además, su mezcla de variables numéricas, ordinales y categóricas, junto con su tamaño manejable (2111 instancias, 17 atributos), lo convierte en un recurso excelente para proyectos educativos y aplicaciones reales en salud digital.
 
-## 📝 Consideraciones Éticas
+## 6. 📝 Consideraciones Éticas
 
 Aunque el dataset es anónimo, aborda temas sensibles como peso, hábitos personales y salud mental. Su uso debe respetar principios éticos fundamentales:
 
@@ -156,13 +156,13 @@ Aunque el dataset es anónimo, aborda temas sensibles como peso, hábitos person
 
 El dataset está pensado para **fines educativos, de investigación y salud pública**, no para usos comerciales sin revisión ética.
 
-## 🔗 Acceso y Uso
+## 7. 🔗 Acceso y Uso
 
 El dataset está disponible bajo **licencia abierta** para investigación y enseñanza. Se recomienda citar adecuadamente tanto al repositorio UCI como al artículo original.
 
-### 📥 Cómo cargarlo en Python:
+### 7.1 📥 Cómo cargarlo en Python:
 
-Acceso con UCI:
+Acceso via UCI:
 ```python
 from ucimlrepo import fetch_ucirepo 
   
@@ -197,6 +197,6 @@ print("Columnas:", obesity_ds.columns.tolist())
 print("Primeras filas:\n", obesity_ds.head())
 ```
 
-## 🔖 Cita Recomendada:
+## 8. 🔖 Cita Recomendada:
 > Mendoza Palechor, F., & De la Hoz Manotas, A. (2019). *Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru and Mexico*. Data in Brief, 27, 104344.  
 > Recuperado de: https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition

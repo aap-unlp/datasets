@@ -1,19 +1,19 @@
 # 🎈 Dataset Clasificación de Globos: Predicción de Inflado
-## 📖 Descripción General
+## 1. 📖 Descripción General
 El conjunto de datos de Clasificación de Globos es una herramienta educativa clásica para principiantes en aprendizaje automático y minería de datos. Este dataset contiene información sobre características físicas de globos y si pueden inflarse o no, permitiendo desarrollar modelos predictivos para determinar la viabilidad de inflado basado en atributos observables.
 
 Los datos reflejan relaciones lógicas entre factores como color, tamaño, capacidad de estiramiento y edad del usuario, lo que lo convierte en un recurso ideal para ejercicios de clasificación binaria y aprendizaje de árboles de decisión en contextos educativos.
 
 **Nota importante**: Esta es una adaptación en español del dataset clásico "Balloons" o "Inflating Balloons", con los atributos traducidos y valores categóricos en español.
 
-## 📊 Atributos y Significados
+## 2. 📊 Atributos y Significados
 
-### 🎯 Variable Objetivo
+### 2.1 🎯 Variable Objetivo
 **Inflado?**: Indica si el globo puede inflarse o no.
  - `Si`: El globo puede inflarse correctamente
  - `No`: El globo no puede inflarse
 
-### 🎨 Atributos Físicos y Contextuales
+### 2.2 🎨 Atributos Físicos y Contextuales
 **Color**: Color del globo.
  - `Amarillo`: Globos de color amarillo
  - `Rojo`: Globos de color rojo
@@ -31,15 +31,15 @@ Los datos reflejan relaciones lógicas entre factores como color, tamaño, capac
  - `Adulto`: Persona adulta
  - `Nene`: Niño/a
 
-### 🏷️ Notas sobre los Atributos
+### 2.3 🏷️ Notas sobre los Atributos
 - Todas las variables son categóricas con valores nominales bien definidos.
 - El atributo "Inflado?" es categórico y sirve como variable objetivo en tareas de clasificación supervisada.
 - Las relaciones entre los atributos siguen patrones lógicos que facilitan el aprendizaje de reglas de decisión.
 - No se reportan valores nulos en el archivo, lo que lo hace ideal para análisis iniciales.
 
-## 🏢 Origen y Procedencia
+## 3. 🏢 Origen y Procedencia
 
-### 📚 Fuente Original
+### 3.1 📚 Fuente Original
 El dataset original "Balloons" o "Inflating Balloons" es un conjunto de datos clásico en la comunidad de machine learning, ampliamente utilizado desde la década de 1990 para enseñar conceptos de árboles de decisión y sistemas de reglas.
 
 **Fuentes originales en inglés**:
@@ -47,7 +47,7 @@ El dataset original "Balloons" o "Inflating Balloons" es un conjunto de datos cl
 - **Repositorios académicos**: Universidad de Carnegie Mellon, MIT
 - **Plataformas educativas**: Weka, Kaggle, OpenML
 
-### 🌐 Adaptación en Español
+### 3.2 🌐 Adaptación en Español
 Esta versión (`globos.csv`) es una adaptación al español del dataset original, con:
 - Nombres de columnas traducidos al español
 - Valores categóricos en español
@@ -58,13 +58,13 @@ Esta versión (`globos.csv`) es una adaptación al español del dataset original
 >
 > **Archivo**: `globos.csv`
 
-## 🔄 Diferencias con la Versión Original
+## 4. 🔄 Diferencias con la Versión Original
 - **Original**: `Color,Size,Stretch,Age,Inflated` (inglés)
 - **Adaptado**: `Color,Tamanio,Se_estira?,Edad,Inflado?` (español)
 - Misma estructura de datos y relaciones lógicas
 - Equivalencia completa de valores categóricos
 
-## 🎯 Valor Analítico
+## 5. 🎯 Valor Analítico
 Este dataset ofrece múltiples oportunidades para el aprendizaje:
 - Clasificación binaria (inflado vs no inflado)
 - Construcción y interpretación de árboles de decisión
@@ -74,13 +74,13 @@ Este dataset ofrece múltiples oportunidades para el aprendizaje:
 - Enseñanza de sobreajuste y generalización
 - Introducción a la minería de reglas de asociación
 
-## 📝 Consideraciones
+## 6. 📝 Consideraciones
 Los datos son sintéticos y creados específicamente para fines educativos. Representan un escenario simplificado diseñado para hacer tangible el proceso de clasificación en machine learning.
 
-## 🔗 Acceso y Uso
+## 7. 🔗 Acceso y Uso
 El dataset está disponible para uso educativo sin restricciones.
 
-### 📥 Cómo cargarlo en Python:
+### 7.1 📥 Cómo cargarlo en Python:
 
 Acceso vía UCI:
 ```python
@@ -123,7 +123,7 @@ print("\nDistribución de la variable objetivo:")
 print(y.value_counts())
 ```
 
-## 🔖 Cita Recomendada:
+## 8. 🔖 Cita Recomendada:
 
 Dataset original:
 > Pazzani, M. (1991). Balloons [Dataset]. UCI Machine Learning Repository. \

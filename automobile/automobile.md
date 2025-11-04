@@ -1,13 +1,13 @@
 # 🚗 Dataset Automobile: Especificaciones y Evaluación de Riesgo de Vehículos
-## 📖 Descripción General
+## 1. 📖 Descripción General
 El dataset "Automobile" es un conjunto de datos clásico y ampliamente utilizado en el campo del machine learning y el análisis de datos. Fue extraído del *Ward's Automotive Yearbook* de 1985 y donado al repositorio UCI en 1987. Este dataset contiene especificaciones técnicas detalladas de 205 vehículos de diferentes marcas y modelos, junto con información sobre su evaluación de riesgo de seguros y pérdidas normalizadas durante su uso.
 
 El conjunto de datos es especialmente valioso para tareas de regresión (como predecir el precio de un automóvil) y clasificación (como evaluar su riesgo de seguro), y es ideal para ejercicios de limpieza de datos debido a la presencia de valores faltantes en atributos clave.
 
 La versión utilizada en este análisis proviene del repositorio oficial de UCI Machine Learning Repository, una fuente confiable y ampliamente citada en investigaciones académicas y proyectos educativos.
 
-## 📊 Atributos y Significados
-### 🔍 Variable Objetivo (Común)
+## 2. 📊 Atributos y Significados
+### 2.1 🔍 Variable Objetivo (Común)
 **price** (Precio): Valor continuo que representa el precio de venta del vehículo en dólares.
 - Rango: 5,118 – 45,400 USD
 - Valores faltantes: Sí
@@ -22,7 +22,7 @@ La versión utilizada en este análisis proviene del repositorio oficial de UCI 
 - Rango: 65 – 256
 - Valores faltantes: Sí
 
-### 🔧 Atributos Técnicos del Vehículo
+### 2.2 🔧 Atributos Técnicos del Vehículo
 **make** (Marca): Nombre del fabricante del automóvil.
 - Ej: alfa-romero, audi, bmw, honda, toyota, volkswagen, etc.
 
@@ -50,7 +50,7 @@ La versión utilizada en este análisis proviene del repositorio oficial de UCI 
 - `front`: Delantero
 - `rear`: Trasero
 
-### 📏 Dimensiones y Peso
+### 2.3 📏 Dimensiones y Peso
 **wheel-base** (Distancia entre ejes): Distancia entre las ruedas delanteras y traseras (pulgadas).
 - Rango: 86.6 – 120.9
 
@@ -66,7 +66,7 @@ La versión utilizada en este análisis proviene del repositorio oficial de UCI 
 **curb-weight** (Peso en vacío): Peso del vehículo sin carga (libras).
 - Rango: 1,488 – 4,066
 
-### ⚙️ Motor y Rendimiento
+### 2.4 ⚙️ Motor y Rendimiento
 **engine-type** (Tipo de motor):
 - `ohc`, `ohcf`, `dohc`, `rotor`, etc.
 
@@ -98,34 +98,34 @@ La versión utilizada en este análisis proviene del repositorio oficial de UCI 
 - Rango: 4,150 – 6,600
 - Valores faltantes: Sí
 
-### ⛽ Eficiencia de Combustible
+### 2.5 ⛽ Eficiencia de Combustible
 **city-mpg** (Consumo urbano): Millas por galón en ciudad.
 - Rango: 13 – 49
 
 **highway-mpg** (Consumo carretera): Millas por galón en autopista.
 - Rango: 16 – 54
 
-### 🏷️ Atributos Identificativos
+### 2.6 🏷️ Atributos Identificativos
 No hay un ID explícito, pero la combinación de `make`, `model` (implícito), `year` y atributos técnicos permite identificar cada vehículo.
 
-## 🏢 Origen y Procedencia
-### 📚 Fuente Primaria: UCI Machine Learning Repository
+## 3. 🏢 Origen y Procedencia
+### 3.1 📚 Fuente Primaria: UCI Machine Learning Repository
 El dataset fue obtenido del repositorio oficial:
 - **URL**: https://archive.ics.uci.edu/dataset/10/automobile
 - **ID del dataset**: 10
 - **Donado por**: Jeffrey Schlimmer (1987)
 
-### 🏛️ Fuentes Históricas Originales
+### 3.2 🏛️ Fuentes Históricas Originales
 Los datos originales provienen del *Ward's Automotive Yearbook* de 1985, una publicación de referencia en la industria automotriz que recopila especificaciones técnicas y comerciales de vehículos nuevos.
 
-## 🔄 Proceso de Curaduría
+## 4. 🔄 Proceso de Curaduría
 El repositorio UCI ha realizado una curaduría básica del dataset original, incluyendo:
 - Estandarización de formatos
 - Documentación detallada de atributos
 - Identificación de valores faltantes
 - Disponibilidad pública bajo licencia abierta
 
-## 🎯 Valor Analítico
+## 5. 🎯 Valor Analítico
 Este dataset presenta características ideales para el aprendizaje y la investigación:
 - Tamaño manejable (205 instancias, 25 atributos)
 - Mezcla de tipos de datos: categóricos, enteros y reales
@@ -133,13 +133,13 @@ Este dataset presenta características ideales para el aprendizaje y la investig
 - Tareas múltiples: regresión (precio), clasificación (symboling), clustering
 - Contexto técnico real y bien documentado
 
-## 📝 Consideraciones Éticas
+## 6. 📝 Consideraciones Éticas
 Aunque este dataset no contiene información personal sensible, es importante tratar los datos con rigor técnico y reconocer su origen en informes actuarial y de seguros. Su uso debe promover prácticas justas en modelos predictivos, especialmente cuando se aplican a evaluaciones de riesgo.
 
-## 🔗 Acceso y Uso
+## 7. 🔗 Acceso y Uso
 El dataset está disponible públicamente bajo una licencia **Creative Commons Attribution 4.0 International (CC BY 4.0)**, lo que permite su uso, modificación y distribución, siempre que se dé el crédito adecuado.
 
-### 📥 Cómo cargarlo en Python:
+### 7.1 📥 Cómo cargarlo en Python:
 
 Acceso vía UCI:
 ```python
@@ -176,7 +176,7 @@ y = automobile_ds['price']
 print("Columnas:", automobile_ds.columns.tolist())
 print("Primeras filas:\n", automobile_ds.head())
 ```
-## 🔖 Cita Recomendada:
+## 8. 🔖 Cita Recomendada:
 >Schlimmer, J. (1985). Automobile Dataset. UCI Machine Learning Repository. https://doi.org/10.24432/C5B01C
 
 ---
