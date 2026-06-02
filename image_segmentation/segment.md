@@ -93,7 +93,7 @@ Nombres de archivos:
 
     segmentación.tst o segmentación.test - datos de prueba
 
-### 3.2 🏛️ Características del Dataset
+### 3.2 🏛�?Características del Dataset
 
 Este dataset fue diseñado específicamente para investigación en segmentación de imágenes:
 
@@ -194,9 +194,15 @@ print("Entrenamiento:", train_df.shape)
 print("Prueba:", test_df.shape)
 ```
 
-## 8. 🔖 Cita Recomendada:
+🔖 Cita Recomendada:
 Dua, D. and Graff, C. (2019). UCI Machine Learning Repository 
 [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, 
 School of Information and Computer Science.
 
 Image Segmentation Data Set. Donor: Vision Group, University of Massachusetts.
+
+
+Datos de la evoluci��n
+
+Recibe entradas (desde el mundo exterior) y produce salidas (al mundo exterior)
+
